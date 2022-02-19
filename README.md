@@ -18,10 +18,10 @@ To deploy, clone and CD into this repo
 Environment defaults to
     
 environment:
-  RELAY_HOST: smtp.example.com
-  RELAY_PORT: 587
-  RELAY_USERNAME: alice@example.com
-  RELAY_PASSWORD: secretpassword
+  RELAY_HOST: smtp.example.com\n
+  RELAY_PORT: 587\n
+  RELAY_USERNAME: alice@example.com\n
+  RELAY_PASSWORD: secretpassword\n
   
 All environment variables are optional. But if you specify a RELAY_HOST, then you'll want to also specify the port, username and password otherwise it's unlikely to work!
 
