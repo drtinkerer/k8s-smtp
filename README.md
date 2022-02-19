@@ -14,3 +14,9 @@ environment:
   RELAY_PORT: 587
   RELAY_USERNAME: alice@example.com
   RELAY_PASSWORD: secretpassword
+
+# Deploy
+
+To deploy, clone and CD into this repo
+
+`kubectl apply -f k8manifests`
