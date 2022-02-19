@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smtp
+spec:
+  selector:
+    matchLabels:
+      app: smtp 
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: smtp 
+    spec:
+      containers:
+      - name: smtp 
+        image: bytemark/smtp 
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 25
